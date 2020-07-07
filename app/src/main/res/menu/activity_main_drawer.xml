@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_new"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/algebra"
+            android:onClick="test"
+            android:title="Тест" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/profile_new"
+            android:title="@string/menu_account" />
+        <item
+            android:id="@+id/nav_rank"
+            android:icon="@drawable/medal_gray"
+            android:title="@string/menu_rank" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/console"
+            android:title="@string/menu_game" />
+    </group>
+
+    <item android:title="Дополнительно">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_share"
+                android:onClick="playmarket"
+                android:title="@string/menu_rate" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/settings_new"
+                android:title="@string/menu_settings" />
+        </menu>
+    </item>
+
+</menu>

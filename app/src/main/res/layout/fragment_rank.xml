@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.math4.user.mathplace.com.math4.user.mathplace.Rank">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categories_listRank"
+        android:layout_width="match_parent"
+        android:layout_weight="91"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <include
+        android:id="@+id/example_this_user"
+        layout="@layout/example_rank"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="9" />
+
+
+
+</LinearLayout>

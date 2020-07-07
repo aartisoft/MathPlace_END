@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ViewPagerTask"
+    android:weightSum="100"
+    android:paddingLeft="15dp"
+    android:background="@color/background"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:padding="7dp"
+            android:layout_weight="90"
+            android:backgroundTint="#859484"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/selector_stroke_color"
+            app:hintTextColor="@color/colorPrimary"
+            android:textColorHint="@color/selector_hint_text_color"
+            android:hint="Условие">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:src="@drawable/bin2"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

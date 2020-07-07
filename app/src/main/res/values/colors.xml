@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#763DCA</color>
+<!-- I #5C6BC0  -->
+    <color name="colorPrimaryDark">#763DCA</color>
+    <color name="colorPrimaryDark2">#5E2DA6</color>
+<!-- I #4950A8  -->
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="red">#FD0303</color>
+    <color name="green">#6CE638</color>
+    <color name="yellow">#F8DB1D</color>
+    <color name="cursor">#84DBFF</color>
+    <color name="background">#FCFCFF</color>
+    <color name="backgroundMenu">#EBEBF3</color>
+    <color name="colorPrimaryTest">#7422C6</color>
+<!--  BCCAFF  -->
+<!-- II BBCBFD  -->
+<!-- I #86A0FC  -->
+    <color name="theme_back">#EEEFF5</color>
+    <color name="empty_text">#807E7E</color>
+    <color name="leftbar">#CB09EC</color>
+    <color name="foregroundItems">#40000000</color>
+    <color name="foregroundItemsLight">#00000000</color>
+
+    <color name="text_color">#5B6175</color>
+<!--    A8BBFF-->
+<!-- II #BBCBFD   -->
+    <!-- I #86A0FC  -->
+    <color name="white">#B1AAAA</color>
+    <color name="target">#3573EE</color>
+    <color name="a"></color>
+    <color name="startCircle">#F50DFC</color>
+    <color name="endCircle">#061BCF</color>
+    <color name="themeMenu">#F8F8FA</color>
+    <color name="colorHello">#E5C5F5</color>
+    <color name="pink">#ac73fd</color>
+    <color name="colorMenu">#C0BEF1</color>
+<!--    A19DEE-->
+<!--  I  #584DC9-->
+    <color name="text_start_describ">#FFFFFF</color>
+    <color name="foreground">#c3d4ff</color>
+    <color name="account_white">#ffffff</color>
+    <color name="account_title">#5278ff</color>
+    <color name="account_nums">#3762fb</color>
+    <color name="accountlow">#A8961F</color>
+    <color name="accountmedium">#173E77</color>
+    <color name="accounthard">#751D28</color>
+    <color name="grey">#3C3C58</color>
+    <color name="theme_name">#4D43BD</color>
+    <color name="black">#000000</color>
+
+
+
+<!--   4D43BD -->
+</resources>

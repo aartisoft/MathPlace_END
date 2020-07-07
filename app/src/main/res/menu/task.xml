@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_like_task"
+        android:orderInCategory="100"
+        android:title="@string/setLike"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_bookmark_task"
+        android:orderInCategory="100"
+        android:title="@string/setBookmark"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_draft"
+        android:orderInCategory="100"
+        android:onClick="draft"
+        android:title="Открыть черновик"
+        app:showAsAction="never" />
+
+</menu>

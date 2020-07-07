@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">MathPlace</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_like">Понравившиеся</string>
+    <string name="setLike">Поставить лайк</string>
+    <string name="setBookmark">Добавить в избранное</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_bookmark">Избранное</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_account">Аккаунт</string>
+    <string name="menu_rank">Рейтинг</string>
+    <string name="menu_game">Тренировка</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_rate">Оцените</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="title_home">Home</string>
+    <string name="ok_decide">Решать</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_activity_chetnost">Чётность</string>
+
+    <string name="section_format"> %1$d</string>
+    <string name="add">Поиск</string>
+    <string name="text">Введите тему...</string>
+    <string name="no_records">Ничего не найдено:(</string>
+    <string name="search_hint">Поиск рекордов</string>
+    <string name="search">Поиск</string>
+    <string name="msg_token_fmt">1</string>
+    <string name="toolbar_title_chetnost">Четность</string>
+    <string name="toolbar_title_ozenka">Оценка + пример</string>
+    <string name="toolbar_title_grafstart">Введение в графы</string>
+    <string name="toolbar_title_paralsumtriegle">Парал. и сумма углов</string>
+    <string name="report_description">Кнопка для отпарвки жалоб на баги и предложений по улучшению приложения</string>
+
+    <string name="call" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="network_monitoring_descr">Статус текущего подключения к сети</string>
+    <string name="connected">Подключено</string>
+    <string name="network_monitoring">Мониторинг наличия сети</string>
+    <string name="no_connection">Нет подключения</string>
+    <string name="wifi">WiFi</string>
+    <string name="cellurar">Мобильная сеть</string>
+    <string name="other_connection">Нет WiFi и сотовых данных, но есть что-то другое, например Bluetooth</string>
+    <string name="vpn">VPN</string>
+    <string name="title_activity_section">Section</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_bookmark2">Bookmark2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="you">You</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string-array name="typeOlymp">
+        <item>Открытый</item>
+        <item>Закрытый</item>
+    </string-array>
+
+
+    <string-array name="sectionOlymp">
+        <item>Алгебра</item>
+        <item>Геометрия</item>
+        <item>ОГЭ</item>
+        <item>Комбинаторика</item>
+        <item>Логика</item>
+        <item>Графы</item>
+    </string-array>
+
+
+    <string-array name="hardOlymp">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="classOlymp">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+</resources>

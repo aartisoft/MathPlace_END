@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.math4.user.mathplace.Account">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="8dp"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/background">
+
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageViewAccount3"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:src="@drawable/account_new"
+                                app:civ_border_color="#473CC9"
+                                android:layout_marginTop="10dp"
+                                app:civ_border_width="3dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/uploadPhoto"
+                                android:layout_width="50dp"
+                                android:layout_height="44dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="openImage"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="6dp"
+                                android:paddingRight="6dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/upload"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.651"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Загрузка..."
+                            android:textColor="@color/theme_name"
+                            android:textSize="28sp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="#CDCCCC" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="100"
+                            android:layout_marginBottom="10dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="33">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Посылок"
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/textViewSend"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="..."
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="25sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="33">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Решено"
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/textViewRight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="..."
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="25sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="33">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Пройдено"
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/textViewPercent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:layout_marginTop="8dp"
+                                    android:text="..."
+                                    android:textColor="@color/theme_name"
+                                    android:textSize="25sp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="900dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:elevation="8dp"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories_listAchiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

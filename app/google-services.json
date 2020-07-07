@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "832330186047",
+    "firebase_url": "https://mathplace-842f7.firebaseio.com",
+    "project_id": "mathplace-842f7",
+    "storage_bucket": "mathplace-842f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832330186047:android:29b2ca4b22ad415259678a",
+        "android_client_info": {
+          "package_name": "com.math4.user.mathplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832330186047-seroi3m7dk8sbip0nrpof173f761huqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.math4.user.mathplace",
+            "certificate_hash": "16707bf7943d2c77566a178d8857b378093da2d4"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0Gom8t4Q4tfzp_xKDfJH71D5C7fRQdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832330186047-54t7qn6t5l6maauniqhi3nc5a8p405it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832330186047:android:af1bce94b0a26ebd59678a",
+        "android_client_info": {
+          "package_name": "com.math6.user.mathplace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0Gom8t4Q4tfzp_xKDfJH71D5C7fRQdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832330186047-54t7qn6t5l6maauniqhi3nc5a8p405it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

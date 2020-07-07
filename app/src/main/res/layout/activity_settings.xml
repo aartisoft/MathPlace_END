@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.math4.user.mathplace.Settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSettings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/constraintLayoutChangeName"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/changeName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="90"
+                android:gravity="center_vertical"
+                android:text="Сменить имя"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/right_arrow" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotification"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время напоминая"
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/time_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21:00 - 22:00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_color"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="10"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/right_arrow" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="4dp"
+            android:onClick="aboutapp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="О приложении"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Выйти из аккаунта"
+            android:textColor="#DD3232"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="387dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="30"
+                android:textColor="#FFFFFF"
+                android:text="Наши аккаунты в соцсетях"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="70"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageButton
+                    android:id="@+id/imageVK"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="33"
+                    android:background="@android:color/transparent"
+                    android:onClick="vk"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/vk" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonVK"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="33"
+                    android:background="@android:color/transparent"
+                    android:onClick="website"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/web" />
+
+                <ImageButton
+                    android:id="@+id/imageVK2"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="33"
+                    android:background="@android:color/transparent"
+                    android:onClick="instagram"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/instagram" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linearLayoutBottomSheet"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/AppModalStyle"
+    tools:context=".BottomSheetFragment"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите тип"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        style="@style/TitleOlympParam"/>
+
+    <TextView
+        android:id="@+id/MaterialTheory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Теория"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+
+    <TextView
+        android:id="@+id/MaterialTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Задача"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="220dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+
+</LinearLayout>

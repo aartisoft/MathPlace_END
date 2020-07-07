@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.math4.user.mathplace.com.math4.user.mathplace.TFMultiPlayer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutFinalTFMP"
+        android:layout_width="320dp"
+        android:layout_height="580dp"
+        android:background="@drawable/btn_rounded_corner_foreground"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/homeButTrainTFMP"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/left_arrow"
+            android:onClick="homeTraining"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/homeButReplayTFMP"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/back2"
+            android:onClick="replay"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeButTrainTFMP" />
+
+        <TextView
+            android:id="@+id/textViewFinalTFMP"
+            android:layout_width="194dp"
+            android:layout_height="241dp"
+            android:layout_marginBottom="248dp"
+            android:gravity="center_horizontal"
+            android:text="Так держать!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageViewArrowUp"
+        android:layout_width="87dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConditionTrueFalseTop"
+        app:srcCompat="@drawable/downarrow" />
+
+    <ImageView
+        android:id="@+id/imageViewlockTop"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="22dp"
+        android:rotation="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConditionTrueFalseTop"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/textViewTimerTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="8dp"
+        android:rotation="-180"
+        android:text="5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewlockTop"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConditionTrueFalseTop" />
+
+    <TextView
+        android:id="@+id/textViewTimerBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="23dp"
+        android:text="5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewConditionTrueFalseBottom"
+        app:layout_constraintStart_toEndOf="@+id/imageViewlockBot" />
+
+    <ImageView
+        android:id="@+id/imageViewlockBot"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewConditionTrueFalseBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonFalseBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="falseBottom"
+            android:text="Ложь"
+            android:textColor="#DF1818"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonTrueBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="trueBottom"
+            android:text="Правда"
+            android:textColor="#16CA16"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewConditionTrueFalseBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center_horizontal"
+        android:text="12 - 5 = 7"
+        android:textColor="@color/theme_name"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonFalseTop"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="falseTop"
+            android:rotation="-180"
+            android:text="Ложь"
+            android:textColor="#DF1818"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonTrueTop"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="trueTop"
+            android:rotation="-180"
+            android:text="Правда"
+            android:textColor="#16CA16"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewConditionTrueFalseTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:rotation="-180"
+        android:text="12 - 5 = 7"
+        android:textColor="@color/theme_name"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:background="@drawable/home_aks"
+        android:gravity="center"
+        android:onClick="home"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewlockBot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlockTop" />
+
+    <TextView
+        android:id="@+id/textViewPointsBotTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="@color/theme_name"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewArrowDown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPointsTopTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:gravity="center_horizontal"
+        android:rotation="-180"
+        android:text="0"
+        android:textColor="@color/theme_name"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewArrowUp" />
+
+    <ImageView
+        android:id="@+id/imageViewArrowDown"
+        android:layout_width="87dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewConditionTrueFalseBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/downarrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

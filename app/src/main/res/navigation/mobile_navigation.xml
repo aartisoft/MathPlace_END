@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.math4.user.mathplace.MainMenu"
+        android:label="MathPlace"
+        tools:layout="@layout/activity_main_menu" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.math4.user.mathplace.ChatsFragment"
+        android:label="Чат"
+        tools:layout="@layout/fragment_chat" />
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.math4.user.mathplace.Account"
+        android:label="Аккаунт"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_rank"
+        android:name="com.math4.user.mathplace.Rank"
+        android:label="Рейтинг"
+        tools:layout="@layout/fragment_rank" />
+
+    <fragment
+        android:id="@+id/navigation_play"
+        android:name="com.math4.user.mathplace.TrainingParam"
+        android:label="Играть"
+        tools:layout="@layout/activity_training_param" />
+</navigation>

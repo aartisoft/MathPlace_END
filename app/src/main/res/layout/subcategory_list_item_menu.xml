@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="7dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="3dp">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Четность"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="100"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="92"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="Всего 10 задач"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    card_view:srcCompat="@drawable/like" />
+                <TextView
+                    android:id="@+id/textViewLikeTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="2"
+                    android:layout_weight="3"
+                    android:singleLine="false"
+                    android:layout_marginBottom="5dp"
+                    android:text="10"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBarTheme"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:max="100"
+                android:layout_gravity="center_vertical"
+                android:progress="0"
+                android:theme="@style/CircularProgress" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

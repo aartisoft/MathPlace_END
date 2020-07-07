@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Измените время\nнапоминания"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupNotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:id="@+id/radio_morning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="1dp"
+                android:text="9:00 — 10:00"
+                android:textSize="19sp"
+                android:buttonTint="@color/text_color"
+                android:textColor="@color/text_color"/>
+
+            <RadioButton
+                android:id="@+id/radio_afternoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:text="12:00 — 13:00"
+                android:textSize="19sp"
+                android:buttonTint="@color/text_color"
+                android:textColor="@color/text_color"/>
+
+            <RadioButton
+                android:id="@+id/radio_evening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:text="18:00 — 19:00"
+                android:textSize="19sp"
+                android:buttonTint="@color/text_color"
+                android:textColor="@color/text_color"/>
+
+            <RadioButton
+                android:id="@+id/radio_night"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:text="21:00 — 22:00"
+                android:textSize="19sp"
+                android:buttonTint="@color/text_color"
+                android:textColor="@color/text_color"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/radio_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="1dp"
+                android:text="выключить"
+                android:textSize="19sp"
+                android:buttonTint="@color/text_color"
+                android:textColor="@color/text_color"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отмена"
+                android:background="@android:color/transparent"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ок"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

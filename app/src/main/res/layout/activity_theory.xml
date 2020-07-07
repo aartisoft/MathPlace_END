@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    
+        <LinearLayout
+            android:id="@+id/scrollViewTheory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Теория"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="16px"
+                android:textStyle="bold"
+                android:textColor="#5B6175"/>
+
+            <LinearLayout
+                android:id="@+id/textTheory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/text_rounded_corner_2"
+                >
+            </LinearLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageViewOpenComment"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:padding="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/comment"/>
+                <Button
+                    android:id="@+id/buttonNextTheory"
+                    android:layout_width="159dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_rounded_corner_new"
+                    android:onClick="send"
+                    android:scaleType="fitXY"
+                    android:text="Решать"
+                    android:textSize="20sp" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

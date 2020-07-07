@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".olymp.AddMaterialTask">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAddMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/ViewPagerTask">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#859484"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/selector_stroke_color"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/selector_hint_text_color"
+                android:layout_marginTop="20dp"
+                android:hint="Условие задачи">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AddTextTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bin2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldAns"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_weight="50"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#859484"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/selector_stroke_color"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/selector_hint_text_color"
+                android:layout_marginTop="20dp"
+                android:hint="Ответ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AddAns"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal|numberSigned"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldHard"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_weight="50"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#859484"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/selector_stroke_color"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/selector_hint_text_color"
+                android:layout_marginTop="20dp"
+                android:hint="Сложность">
+
+                <AutoCompleteTextView
+                    android:id="@+id/hardAddMaterial"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/addSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="19sp"
+                android:text="+ добавить решение..."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#B3B0B0"
+                android:text="необязательно"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

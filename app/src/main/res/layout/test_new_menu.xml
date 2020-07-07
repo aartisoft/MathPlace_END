@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="0dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutStudy"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/fon3">
+
+            <Button
+                android:id="@+id/buttonStudy"
+                android:layout_width="243dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_rounded_corner_new"
+                android:gravity="center"
+                android:text="Продолжить решать"
+                android:textColor="#FFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.241" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgcrat"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/algebra"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewStudy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="Четность"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.023"
+                app:layout_constraintStart_toEndOf="@+id/imgcrat"
+                app:layout_constraintTop_toBottomOf="@+id/buttonStudy" />
+
+            <TextView
+                android:id="@+id/textViewProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Текущий прогресс 0%"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgcrat"
+                app:layout_constraintTop_toBottomOf="@+id/textViewStudy" />
+
+            <ProgressBar
+                android:id="@+id/progressBarStudy"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="12dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:paddingTop="-10dp"
+                android:progress="0"
+                android:theme="@style/CircularProgress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.727" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="100"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/class7"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/algebra"
+                android:layout_weight="25"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="3dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/class8"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_weight="25"
+                android:src="@drawable/algebra"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="3dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/class9"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_weight="25"
+                android:src="@drawable/algebra"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="3dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/olympiad"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_weight="25"
+                android:src="@drawable/algebra"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="3dp" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_list"
+            android:layout_width="match_parent"
+            android:layout_height="2500dp"
+            android:layout_marginTop="8dp"
+            android:scrollbarSize="0dp"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>

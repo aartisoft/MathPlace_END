@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.math4.user.mathplace.com.math4.user.mathplace.MainActivity"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_taskDraft"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutSol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+<!--        <ScrollView-->
+<!--            android:id="@+id/scrollViewSolution"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_weight="20"-->
+<!--            android:background="@drawable/text_rounded_corner_solution">-->
+<!--            <TextView-->
+<!--                android:id="@+id/textViewTaskSol"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/theme_name"-->
+<!--                android:text="Треугольником Паскаля называют бесконечную треугольную таблицу чисел, у которой на вершине и по бокам стоят единицы, а каждое число внутри равно сумме двух стоящих над ним чисел. Так, например, третья строка треугольника (1,2,1) содержит два нечетных числа и одно четное. Треугольником Паскаля называют бесконечную треугольную таблицу чисел, у которой на вершине и по бокам стоят единицы, а каждое число внутри равно сумме двух стоящих над ним чисел. Так, например, третья строка треугольника (1,2,1) содержит два нечетных числа и одно четное."/>-->
+<!--        </ScrollView>-->
+        <com.math4.user.mathplace.MySurfaceView
+            android:id="@+id/mySurfaceView"
+            android:layout_width="match_parent"
+            android:layout_weight="83"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ECE8E8"
+            android:layout_weight="17"
+            android:weightSum="100">
+
+            <ImageButton
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_weight="33"
+                android:background="#763DCA"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pen"
+                android:id="@+id/pen"
+                android:onClick="pen"/>
+
+            <ImageButton
+                android:id="@+id/eraser"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_weight="33"
+                android:scaleType="fitCenter"
+                android:src="@drawable/eraser"
+                android:background="@android:color/transparent"
+                android:onClick="eraser"/>
+
+            <ImageButton
+                android:id="@+id/Trash"
+                android:layout_width="41dp"
+                android:layout_height="30dp"
+                android:layout_weight="33"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/trash"
+                android:background="@android:color/transparent"
+                android:onClick="trash"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="2dip" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оставьте оценку"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        />
+
+
+
+    <RatingBar
+        android:id="@+id/ratingbarTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="#D1C9C9"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:rating="0"
+        android:stepSize="1.0" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:maxLines="1"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Поддерижте нас оценкой в Google Play!"/>
+
+</LinearLayout>

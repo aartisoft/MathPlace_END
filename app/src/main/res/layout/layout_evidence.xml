@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTask2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTask"
+                    android:layout_width="match_parent"
+                    android:minHeight="440dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="100dp"
+                    android:orientation="vertical"
+                    android:translationZ="20dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp">
+
+                        <TextView
+                            android:id="@+id/textViewHead"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
+                            android:background="@drawable/title_rounded_corner"
+                            android:padding="8dp"
+                            android:text="Заголовок"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="9dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                            app:layout_constraintEnd_toStartOf="@+id/star1"
+                            app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                            app:srcCompat="@drawable/star" />
+
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="9dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                            app:layout_constraintEnd_toStartOf="@+id/star3"
+                            app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                            app:srcCompat="@drawable/star" />
+
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="9dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                            app:layout_constraintEnd_toEndOf="@+id/textViewHead"
+                            app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                            app:srcCompat="@drawable/star" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutTaskText"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageViewOpenComment"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:padding="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/comment"/>
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="530px"
+                    android:layout_height="54dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_rounded_corner_new"
+                    android:onClick="send"
+                    android:scaleType="fitXY"
+                    android:text="продолжить"
+                    android:textSize="20sp" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

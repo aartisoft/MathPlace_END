@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarOlymp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:theme="@style/ViewPagerTask2"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textFieldName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:backgroundTint="#859484"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:boxStrokeColor="@color/selector_stroke_color"
+                    app:hintTextColor="@color/colorPrimary"
+                    android:textColorHint="@color/selector_hint_text_color"
+                    android:layout_marginTop="20dp"
+                    android:hint="Название">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textViewNameOlymp"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:theme="@style/ViewPagerTask2"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="7dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="3dp">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Параметры"
+                        style="@style/TitleOlympParam"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/typeOlympLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="#859484"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/selector_stroke_color"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:textColorHint="@color/selector_hint_text_color"
+                        android:layout_marginTop="10dp"
+                        android:hint="Тип урока">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/typeOlymp"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/sectionOlympLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="#859484"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/selector_stroke_color"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:textColorHint="@color/selector_hint_text_color"
+                        android:layout_marginTop="5dp"
+                        android:hint="Раздел математики">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sectionOlymp"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/classOlympLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="#859484"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="@color/selector_stroke_color"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:textColorHint="@color/selector_hint_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Класс урока">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/classOlymp"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="3dp">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Материал"
+                        style="@style/TitleOlympParam"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories_listContentOlymp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <Button
+                        android:id="@+id/addMyContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Добавить свой материал"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="17sp"
+                        android:padding="10dp"
+                        android:background="@drawable/btn_rounded_corner"
+                        />
+
+                    <Button
+                        android:id="@+id/addMathPlaceContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Добавить из MathPlace"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="17sp"
+                        android:padding="10dp"
+                        android:background="@drawable/btn_rounded_corner"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

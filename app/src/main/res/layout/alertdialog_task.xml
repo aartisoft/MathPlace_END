@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTask2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTask"
+                android:layout_width="match_parent"
+                android:minHeight="440dp"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:orientation="vertical"
+                android:translationZ="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/textViewHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@drawable/title_rounded_corner"
+                        android:padding="8dp"
+                        android:text="Заголовок"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="9dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                        app:layout_constraintEnd_toStartOf="@+id/star1"
+                        app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                        app:srcCompat="@drawable/star_evidence" />
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="9dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                        app:layout_constraintEnd_toStartOf="@+id/star3"
+                        app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                        app:srcCompat="@drawable/star_evidence" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="9dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewHead"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewHead"
+                        app:layout_constraintTop_toTopOf="@+id/textViewHead"
+                        app:srcCompat="@drawable/star_evidence" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTaskTextContest"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/dialog_negative_btnTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/colorPrimary"
+                    android:text="назад"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/dialog_positive_btnTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/btn_rounded_corner_new"
+                    android:onClick="send"
+                    android:scaleType="fitXY"
+                    android:text="Выбрать"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+</ScrollView>

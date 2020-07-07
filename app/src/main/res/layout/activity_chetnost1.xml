@@ -1,0 +1,69 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_chetnost"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <FrameLayout
+        android:id="@+id/linearLayoutItems"
+        android:layout_width="match_parent"
+        android:foreground="#00FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:orientation="vertical">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/sliding_tabs2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                app:tabTextColor="@color/background"
+                app:tabIndicatorColor="@color/background"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:tabMode="scrollable" />
+            <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent">-->
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+
+
+    <!--        <include-->
+    <!--            android:id="@+id/load"-->
+    <!--            layout="@layout/fragment_load"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

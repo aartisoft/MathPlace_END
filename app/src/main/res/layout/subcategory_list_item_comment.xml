@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top_comment"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewAccount2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/account_new"
+            app:civ_border_color="#473CC9"
+            app:civ_border_width="1dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewNameComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/theme_name"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textViewTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="17sp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageView9Comment"
+                        android:layout_width="25dp"
+                        android:padding="3dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        card_view:srcCompat="@drawable/like_empty" />
+                    <TextView
+                        android:id="@+id/textViewLikeComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="#6B62D5"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="Ответить"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

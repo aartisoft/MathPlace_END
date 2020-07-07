@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.math4.user.mathplace.com.math4.user.mathplace.TrueFalse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutFinalTF"
+        android:layout_width="320dp"
+        android:layout_height="580dp"
+        android:background="@drawable/btn_rounded_corner_foreground"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewScoreTF"
+            android:layout_width="99dp"
+            android:layout_height="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176"
+            app:srcCompat="@drawable/trophy" />
+
+
+        <TextView
+            android:id="@+id/textViewScoreMain2TF"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="70dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewScoreTF"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/homeButTrainTF"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/left_arrow"
+            android:onClick="homeTraining"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/homeButReplayTF"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/back2"
+            android:onClick="replay"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeButTrainTF" />
+
+        <TextView
+            android:id="@+id/textViewFinalTF"
+            android:layout_width="205dp"
+            android:layout_height="113dp"
+            android:layout_marginBottom="153dp"
+            android:gravity="center_horizontal"
+            android:text="Так держать!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonTrueFalse2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="answer2"
+            android:text="  Ложь  "
+            android:textColor="#E83F3F"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonTrueFalse1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded_corner_ans_training"
+            android:onClick="answer1"
+            android:text="ПРАВДА"
+            android:textColor="#16CA16"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewConditionTrueFalse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="12 - 5 = 7?"
+        android:textColor="@color/theme_name"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPointsTF" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/textViewTimerTF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="5"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/homeButTrueFalse"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_aks"
+            android:onClick="homeTraining"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewScoreMainTF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trophy" />
+
+        <TextView
+            android:id="@+id/textViewScoreMainTF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="87"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.633" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewPointsTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="@color/theme_name"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3206990026084887/4281203161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>
